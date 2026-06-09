@@ -58,10 +58,10 @@ export default function Hero() {
   const showCursor = isTyping || cursorOn
 
   return (
-    <section className="min-h-screen flex flex-col items-center pt-24 pb-20 px-6">
+    <section className="min-h-screen flex flex-col items-center pt-12 pb-10 px-6">
 
       {/* Portrait — upper area */}
-      <div className="w-[260px] h-[340px] sm:w-[300px] sm:h-[390px] mt-4">
+      <div className="w-[262px] h-[340px] sm:w-[302px] sm:h-[390px] mt-4">
         <PortraitParticles className="w-full h-full" />
       </div>
 

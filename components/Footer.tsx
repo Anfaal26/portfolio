@@ -10,7 +10,7 @@ const navLinks = [
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--bg-border)] bg-[rgba(6,6,14,0.55)] backdrop-blur-sm">
-      <div className="py-16 max-w-6xl mx-auto px-6 md:px-10">
+      <div className="py-8 max-w-6xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 
           {/* Left */}

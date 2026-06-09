@@ -27,20 +27,28 @@ export default function ParticleField() {
         fpsLimit: 60,
         interactivity: { events: { resize: { enable: true } } },
         particles: {
-          color: { value: ['#E8E8F0', '#C8D0D8'] },
+          color: { value: ['#FFFFFF', '#E8EDF2', '#C8D0D8', '#A0AACC', '#8090BB'] },
           links: { enable: false },
           move: {
             enable: true,
-            speed: 0.28,
+            speed: 0.08,
             direction: 'none',
             random: true,
             straight: false,
             outModes: { default: 'out' },
           },
-          number: { density: { enable: true, width: 1000 }, value: 55 },
-          opacity: { value: { min: 0.05, max: 0.22 } },
+          number: { density: { enable: true, width: 1200 }, value: 180 },
+          opacity: {
+            value: { min: 0.04, max: 0.55 },
+            animation: {
+              enable: true,
+              speed: 0.5,
+              sync: false,
+              minimumValue: 0.04,
+            },
+          },
           shape: { type: 'circle' },
-          size: { value: { min: 0.4, max: 1.2 } },
+          size: { value: { min: 0.3, max: 1.6 } },
         },
         detectRetina: true,
       }}

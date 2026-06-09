@@ -42,7 +42,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 md:py-32 lg:py-40">
+    <section id="about" className="py-12 md:py-16 lg:py-20">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -50,28 +50,27 @@ export default function About() {
           <div>
             <SectionReveal direction="left">
               <p className="text-[11px] font-grotesk font-medium tracking-[0.18em] uppercase text-[var(--accent)] mb-5">
-                About
+                little bit about me...
               </p>
             </SectionReveal>
 
             <SectionReveal delay={0.1}>
               <h2 className="font-grotesk font-semibold text-4xl md:text-5xl gradient-text tracking-[-0.03em] leading-tight">
-                Turning research into real products
+                Where human curiosity meets machine intelligence
               </h2>
             </SectionReveal>
 
             <SectionReveal delay={0.2}>
               <p className="mt-6 font-inter text-[17px] text-[var(--text-secondary)] max-w-lg leading-[1.78]">
-                I&apos;m a final-year Computer Science student at Taylor&apos;s University, specialising in Artificial Intelligence — driven by genuine curiosity rather than just coursework. I&apos;m drawn to the intersection of intelligent systems, modern web architecture, and the bigger questions: how machines learn, how systems scale, and occasionally, how the universe works. Outside of code, I read into astrophysics and philosophy, take psychology as a minor, and stay grounded through football, hiking, and sport.
+                I'm a final-year Computer Science student at Taylor's University, specialising in Artificial Intelligence; genuinely obsessed with how intelligent systems are built, trained, and deployed. My interest sits at the crossroads of machine learning research and real-world engineering: from deep reinforcement learning and computer vision to RAG pipelines and LLM applications. I minor in psychology, which has shaped how I think about AI — I find myself constantly drawing parallels between how the human mind learns and how machines do, and how psychological concepts are already abstracted in the domain of machine intelligence. When I'm not thinking about machines, I'm thinking about the bigger questions: the cosmos, philosophy, and the nature of life & intelligence itself. In the era of machines, to keep my humanity, I go for occasional hikes and keep my inner child busy with sports whenever time allows.
               </p>
             </SectionReveal>
 
             <SectionReveal delay={0.27}>
               <p className="mt-4 font-inter text-[17px] text-[var(--text-secondary)] max-w-lg leading-[1.78]">
-               Originally from Bangladesh, based in Subang Jaya. I build across the full stack — React, Next.js, FastAPI, and Node.js on the surface; PyTorch, RAG pipelines, and computer vision underneath. My tools of choice span Python, Java, C++, SQL, and R, backed by PostgreSQL, MongoDB, Docker, and Redis. I hold a current CGPA of 3.75 with Dean&apos;s List recognition across five semesters, and I&apos;m actively looking for an internship where I can contribute to something real.
+               Originally from Bangladesh, based in Subang Jaya. My core stack is PyTorch, Python, and FastAPI — building and deploying ML systems end-to-end, from training pipelines to production inference. That psychology lens feeds directly into my ML work: reinforcement learning, to me, isn't just an algorithm — it's a formalisation of how living systems learn through consequence, iteration and failure. I work across the full stack when needed — Next.js, React, PostgreSQL, Docker, MongoDB — but AI and ML is where I focus. I hold a current CGPA of 3.75 with Dean's List recognition across five semesters, and I'm actively seeking an internship where I can contribute to meaningful AI work in a real engineering environment.
               </p>
             </SectionReveal>
-
             <SectionReveal delay={0.35}>
               <div className="mt-10 flex gap-10">
                 {stats.map((stat) => (

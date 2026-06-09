@@ -34,7 +34,7 @@ const education = [
     location: 'Subang Jaya, Malaysia',
     period: '2022 — 2026',
     detail: 'CGPA 3.75 / 4.00 · Focus: AI & Machine Learning, Software Engineering',
-    highlight: "Dean's List — 5 consecutive semesters",
+    highlight: "5/6 Dean's List awards across all semesters",
   },
 ]
 
@@ -44,7 +44,7 @@ const certifications = [
 
 export default function SkillsEducation() {
   return (
-    <section id="skills" className="py-24 md:py-32 lg:py-40">
+    <section id="skills" className="py-12 md:py-16 lg:py-20">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
         {/* ── Skills ── */}
@@ -90,7 +90,7 @@ export default function SkillsEducation() {
 
         {/* ── Education ── */}
         <SectionReveal delay={0.1}>
-          <p className="text-[11px] font-grotesk font-medium tracking-[0.18em] uppercase text-[var(--accent)] mb-5 mt-24">
+          <p className="text-[11px] font-grotesk font-medium tracking-[0.18em] uppercase text-[var(--accent)] mb-5 mt-12">
             Education
           </p>
           <h2 className="font-grotesk font-semibold text-4xl md:text-5xl tracking-[-0.03em] gradient-text">

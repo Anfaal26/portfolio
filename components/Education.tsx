@@ -12,7 +12,7 @@ const COURSEWORK = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 md:py-28">
+    <section id="education" className="py-10 md:py-14">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
 
         <SectionReveal direction="left">
@@ -131,13 +131,14 @@ export default function Education() {
                 </div>
                 <ul className="space-y-1.5">
                   {[
-                    { subject: 'Chemistry',              grade: '9 (A*)' },
-                    { subject: 'Bengali',                grade: '8 (A*)' },
-                    { subject: 'Mathematics',            grade: 'B'      },
-                    { subject: 'Further Pure Maths',     grade: null     },
-                    { subject: 'Physics',                grade: null     },
-                    { subject: 'Economics',              grade: null     },
-                    { subject: 'English Language',       grade: 'B'      },
+                   { subject: 'Mathematics',            grade: '9 (A*)'},
+                   { subject: 'Further Pure Maths',     grade: '9 (A*)' },
+                   { subject: 'Physics',                grade: '9 (A*)' },
+                   { subject: 'English Language',       grade: '9 (A*)' },
+                   { subject: 'Chemistry',              grade: '9 (A*)' },
+                   { subject: 'Economics',              grade: '9 (A*)' },
+                   { subject: 'Bengali',                grade: '8 (A*)' },
+                     
                   ].map(({ subject, grade }) => (
                     <li key={subject} className="flex items-center justify-between">
                       <span className="text-sm text-[var(--text-secondary)] font-grotesk">{subject}</span>

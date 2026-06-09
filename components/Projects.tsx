@@ -16,7 +16,7 @@ export default function Projects() {
   const standard = filtered.filter((p) => !p.featured)
 
   return (
-    <section id="projects" className="py-24 md:py-32 lg:py-40">
+    <section id="projects" className="py-12 md:py-16 lg:py-20">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <SectionReveal>
           <p className="text-[11px] font-grotesk font-medium tracking-[0.18em] uppercase text-[var(--accent)] mb-5">
