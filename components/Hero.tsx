@@ -6,7 +6,7 @@ import PortraitParticles from './PortraitParticles'
 
 const FULL_NAME  = 'Mohammad Anfaal Hossain'
 const ROLE       = 'AI Engineer & Full-Stack Developer'
-const BIO        = 'Final-year CS student from Malaysia building AI systems and full-stack products at the intersection of research and reality.'
+const BIO        = "Final-year CS student from Taylor's University, building AI systems and full-stack products at the intersection of research and reality. Currently seeking internships from September."
 const TYPE_SPEED = 65 // ms per character
 
 export default function Hero() {
@@ -67,17 +67,6 @@ export default function Hero() {
 
       {/* Name — directly below portrait */}
       <div className="mt-6 text-center max-w-2xl w-full">
-
-        {/* Status badge */}
-        <div className="mb-5 inline-flex items-center gap-2 border border-[var(--bg-border)] bg-[var(--bg-elevated)] rounded-full px-4 py-1.5">
-          <span
-            className="w-2 h-2 rounded-full bg-[var(--success)] shrink-0"
-            style={{ animation: 'pulse-dot 2.5s ease-in-out infinite' }}
-          />
-          <span className="text-xs font-grotesk font-medium text-[var(--text-secondary)]">
-            Open to Internships · 2026
-          </span>
-        </div>
 
         {/* Typewriter name */}
         <h1
