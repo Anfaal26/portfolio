@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://anfaal26.vercel.app/sitemap.xml
+Sitemap: https://portfolio-inky-delta-15.vercel.app/sitemap.xml
