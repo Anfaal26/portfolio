@@ -23,6 +23,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://anfaal26.vercel.app'),
   title: 'Mohammad Anfaal Hossain — AI Engineer & Full-Stack Developer',
   description: "Portfolio of Mohammad Anfaal Hossain, a final-year CS student from Malaysia at Taylor's University specialising in AI/ML, LLM applications, and full-stack development. Open to internships in 2026.",
   keywords: ['AI engineer Malaysia','machine learning portfolio','LLM developer','computer vision','Next.js developer Malaysia','internship 2026','deep reinforcement learning','RAG',"Taylor's University"],
