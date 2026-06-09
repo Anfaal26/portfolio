@@ -166,7 +166,7 @@ export default function PortraitParticles({ className }: { className?: string })
 
         ctx.beginPath()
         ctx.arc(p.x, p.y, size, 0, Math.PI * 2)
-        ctx.fillStyle = `hsla(${p.hue}, 44%, 68%, ${alpha})`
+        ctx.fillStyle = `hsla(${p.hue}, 18%, 82%, ${alpha})`
         ctx.fill()
       }
 

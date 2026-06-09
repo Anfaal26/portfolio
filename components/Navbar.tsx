@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
+import Image from 'next/image';
 
 const NAV_LINKS = [
   { label: 'About', id: 'about' },
@@ -66,13 +67,13 @@ export default function Navbar() {
       >
         <div className="max-w-6xl mx-auto px-6 md:px-10 h-full flex items-center justify-between">
 
-          {/* Monogram */}
+          {/* Logo */}
           <button
             onClick={scrollToTop}
             aria-label="Scroll to top"
-            className="w-9 h-9 border border-[var(--card-border)] rounded-lg flex items-center justify-center text-[var(--accent)] font-grotesk font-bold text-sm cursor-pointer select-none transition-all duration-200 hover:border-[var(--accent)] hover:shadow-[0_0_12px_var(--accent-glow)]"
+            className="w-9 h-9 rounded-lg overflow-hidden cursor-pointer select-none transition-all duration-200 hover:opacity-80 hover:shadow-[0_0_12px_var(--accent-glow)] shrink-0"
           >
-            AN
+            <Image src="/favicon.png" alt="logo" width={36} height={36} className="w-full h-full object-cover" />
           </button>
 
           {/* Desktop nav */}

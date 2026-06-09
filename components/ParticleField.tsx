@@ -27,7 +27,7 @@ export default function ParticleField() {
         fpsLimit: 60,
         interactivity: { events: { resize: { enable: true } } },
         particles: {
-          color: { value: ['#ffffff', '#8AAFC8'] },
+          color: { value: ['#E8E8F0', '#C8D0D8'] },
           links: { enable: false },
           move: {
             enable: true,

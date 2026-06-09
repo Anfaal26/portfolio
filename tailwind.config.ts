@@ -4,6 +4,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        georgia: ['Georgia', '"Times New Roman"', 'serif'],
         grotesk: ['var(--font-space-grotesk)', 'sans-serif'],
         inter: ['var(--font-inter)', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
