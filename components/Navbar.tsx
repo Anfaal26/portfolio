@@ -5,10 +5,10 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
 
 const NAV_LINKS = [
-  { label: 'About', id: 'about' },
+  { label: 'About',    id: 'about'    },
   { label: 'Projects', id: 'projects' },
-  { label: 'Skills', id: 'skills' },
-  { label: 'Contact', id: 'contact' },
+  { label: 'Skills',   id: 'skills'   },
+  { label: 'Contact',  id: 'contact'  },
 ];
 
 export default function Navbar() {

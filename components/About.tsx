@@ -62,13 +62,13 @@ export default function About() {
 
             <SectionReveal delay={0.2}>
               <p className="mt-6 font-inter text-[17px] text-[var(--text-secondary)] max-w-lg leading-[1.78]">
-                I&apos;m a final-year Computer Science student at Taylor&apos;s University, Malaysia, focused on building AI-powered systems that bridge the gap between academic research and working products. My work spans LLM pipelines, deep learning for medical imaging, and full-stack web platforms.
+                I&apos;m a final-year Computer Science student at Taylor&apos;s University, specialising in Artificial Intelligence — driven by genuine curiosity rather than just coursework. I&apos;m drawn to the intersection of intelligent systems, modern web architecture, and the bigger questions: how machines learn, how systems scale, and occasionally, how the universe works. Outside of code, I read into astrophysics and philosophy, take psychology as a minor, and stay grounded through football, hiking, and sport.
               </p>
             </SectionReveal>
 
             <SectionReveal delay={0.27}>
               <p className="mt-4 font-inter text-[17px] text-[var(--text-secondary)] max-w-lg leading-[1.78]">
-                I&apos;m especially interested in the Malaysian tech ecosystem — healthtech, fintech, and how AI can be applied thoughtfully in local contexts. I build things that are fast, useful, and shippable.
+               Originally from Bangladesh, based in Subang Jaya. I build across the full stack — React, Next.js, FastAPI, and Node.js on the surface; PyTorch, RAG pipelines, and computer vision underneath. My tools of choice span Python, Java, C++, SQL, and R, backed by PostgreSQL, MongoDB, Docker, and Redis. I hold a current CGPA of 3.75 with Dean&apos;s List recognition across five semesters, and I&apos;m actively looking for an internship where I can contribute to something real.
               </p>
             </SectionReveal>
 

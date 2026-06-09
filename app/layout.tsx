@@ -61,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <GlowCursor />
         <NoiseOverlay />
         <SmoothScroll>
-          <main id="main-content">{children}</main>
+          <main id="main-content" style={{ position: 'relative', zIndex: 10 }}>{children}</main>
         </SmoothScroll>
       </body>
     </html>
