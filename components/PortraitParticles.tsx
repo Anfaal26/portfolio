@@ -127,7 +127,7 @@ export default function PortraitParticles({ className }: { className?: string })
     img.onload = () => {
       particles = buildParticlesFromImage(img, w, h)
     }
-    img.src = '/portrait.jpg'
+    img.src = '/portrait.png'
 
     const draw = () => {
       ctx.clearRect(0, 0, w, h)
