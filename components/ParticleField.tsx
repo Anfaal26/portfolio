@@ -44,7 +44,6 @@ export default function ParticleField() {
               enable: true,
               speed: 0.5,
               sync: false,
-              minimumValue: 0.04,
             },
           },
           shape: { type: 'circle' },
