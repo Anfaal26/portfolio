@@ -1,6 +1,5 @@
 'use client'
-import { useRef } from 'react'
-import { motion, useInView, useReducedMotion } from 'framer-motion'
+import { useRef, useEffect, useState } from 'react'
 
 interface SectionRevealProps {
   children: React.ReactNode
@@ -16,32 +15,54 @@ export default function SectionReveal({
   direction = 'up',
 }: SectionRevealProps) {
   const ref = useRef<HTMLDivElement>(null)
-  const prefersReducedMotion = useReducedMotion()
+  const [visible, setVisible] = useState(false)
 
-  // useInView works correctly with Lenis (unlike whileInView)
-  const isInView = useInView(ref, { once: true, amount: 0.05 })
+  useEffect(() => {
+    // Skip animation for reduced-motion users
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setVisible(true)
+      return
+    }
 
-  if (prefersReducedMotion) {
-    return <div ref={ref} className={className}>{children}</div>
-  }
+    const el = ref.current
+    if (!el) return
 
-  const hidden = direction === 'left'
-    ? { opacity: 0, x: -24, filter: 'blur(4px)' }
-    : { opacity: 0, y: 28, filter: 'blur(4px)' }
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true)
+          io.disconnect()
+        }
+      },
+      // threshold:0 = fire the moment even 1px enters the viewport
+      { threshold: 0, rootMargin: '0px 0px -30px 0px' }
+    )
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
 
-  const visible = direction === 'left'
-    ? { opacity: 1, x: 0, filter: 'blur(0px)' }
-    : { opacity: 1, y: 0, filter: 'blur(0px)' }
+  const dx = direction === 'left' ? '-18px' : '0px'
+  const dy = direction === 'up'   ? '22px'  : '0px'
 
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={hidden}
-      animate={isInView ? visible : hidden}
-      transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1], delay }}
       className={className}
+      style={{
+        opacity:   visible ? 1 : 0,
+        transform: visible
+          ? 'translate(0, 0)'
+          : `translate(${dx}, ${dy})`,
+        filter:    visible ? 'none' : 'blur(3px)',
+        // No transition while invisible — prevents initial flash
+        // Transition fires the moment 'visible' flips to true
+        transition: visible
+          ? `opacity 0.65s ease ${delay}s, transform 0.65s ease ${delay}s, filter 0.5s ease ${delay}s`
+          : 'none',
+        willChange: 'opacity, transform',
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   )
 }
